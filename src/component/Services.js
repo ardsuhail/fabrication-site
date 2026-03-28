@@ -276,7 +276,7 @@ const ServiceSection = ({ service, index }) => {
                 Get Free Quote
               </Link>
               <Link
-                href="/portfolio"
+                href="/projects"
                 className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:border-gray-400 transition"
               >
                 View Our Work →
@@ -437,7 +437,7 @@ const ServicesPage = () => {
               Chat on WhatsApp
             </Link>
             <Link
-              href="/portfolio"
+              href="/projects"
               className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition"
             >
               View Our Work →

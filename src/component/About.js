@@ -157,7 +157,7 @@ const About = () => {
                Get Free Quote
             </Link>
             <Link
-              href="/portfolio"
+              href="/projects"
               className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/10"
             >
               View Our Work →
@@ -292,10 +292,10 @@ const About = () => {
           </div>
           <div className="mt-10 text-center">
             <Link
-              href="/portfolio"
+              href="/projects"
               className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-3 text-sm font-medium text-gray-700 transition hover:border-gray-500 hover:bg-gray-100"
             >
-              View Full Portfolio →
+              View all Projects →
             </Link>
           </div>
         </div>

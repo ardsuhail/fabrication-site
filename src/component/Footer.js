@@ -21,7 +21,7 @@ const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
 const QUICK_LINKS = [
   { label: 'Home',      href: '/' },
   { label: 'Services',  href: '/services' },
-  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Projects',  href: '/projects' },
   { label: 'About Us',  href: '/about' },
   { label: 'Contact',   href: '/contact' },
 ]

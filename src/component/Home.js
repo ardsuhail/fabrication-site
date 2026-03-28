@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import ReactStars from 'react-stars'
 import { siteConfig } from '@/lib/config/site'
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
@@ -122,7 +121,7 @@ const HeroSection = () => {
   }, [currentIndex])
 
   return (
-    <section className="relative overflow-hidden bg-neutral-950">
+      <section className="relative overflow-hidden bg-neutral-950 content-visibility-auto">
       {/* Slides */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -250,6 +249,8 @@ const PortfolioCard = ({ title, desc, src, alt }) => (
         width={500}
         height={300}
         className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        loading="lazy"
       />
     </div>
     {/* Overlay always visible on mobile, hover on desktop */}
@@ -280,13 +281,7 @@ const PortfolioCard = ({ title, desc, src, alt }) => (
 // Testimonial card
 const TestimonialCard = ({ name, location, text, rating }) => (
   <div className="flex flex-col rounded-2xl border border-gray-200 bg-white p-6 transition hover:border-green-500/30">
-    <ReactStars
-      count={5}
-      value={rating}
-      size={18}
-      edit={false}
-      activeColor="#22c55e"
-    />
+    <div className="flex text-yellow-500">{Array.from({ length: 5 }, (_, i) => i < rating ? '★' : '☆').join('')}</div>
     <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-700">
       "{text}"
     </p>
@@ -314,7 +309,7 @@ const page = () => {
       <StatsBar />
 
       {/* 3. SERVICES */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-24 content-visibility-auto">
         <div className="mx-auto max-w-screen-xl px-4">
           <div className="mb-14 text-center">
             <p className="mb-2 text-sm font-medium text-green-600">What We Do</p>
@@ -340,7 +335,7 @@ const page = () => {
       </section>
 
       {/* 4. PORTFOLIO PREVIEW */}
-      <section className="bg-gray-50 py-24">
+      <section className="bg-gray-50 py-24 content-visibility-auto">
         <div className="mx-auto max-w-screen-xl px-4">
           <div className="mb-14 text-center">
             <p className="mb-2 text-sm font-medium text-green-600">Projects</p>
@@ -356,7 +351,7 @@ const page = () => {
           </div>
           <div className="mt-14 text-center">
             <Link
-              href="/prjects"
+              href="/projects"
               className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-3 text-sm font-medium text-gray-700 transition hover:border-gray-500 hover:bg-gray-100"
             >
               View All Projects →
@@ -404,7 +399,7 @@ const page = () => {
       </section>
 
       {/* 6. TESTIMONIALS */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-24 content-visibility-auto">
         <div className="mx-auto max-w-screen-xl px-4">
           <div className="mb-14 text-center">
             <p className="mb-2 text-sm font-medium text-green-600">Reviews</p>
