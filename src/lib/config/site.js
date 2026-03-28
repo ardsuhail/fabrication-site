@@ -41,7 +41,7 @@ export const siteConfig = {
     twitter: "https://twitter.com/metalkohinoor",
     linkedin: "https://www.linkedin.com/company/metalkohinoor",
     youtube: "https://www.youtube.com/@metalkohinoor",
-    whatsappLink: "https://wa.me/919761396570",
+    whatsappLink: "https://wa.me/919797928168",
     twitterHandle: "metalkohinoor"
   },
 }

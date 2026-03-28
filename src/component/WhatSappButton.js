@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+import { siteConfig } from '@/lib/config/site'
 const WhatSappButton = () => {
    
     
-      const WHATSAPP_NUMBER = '919999999999' // TODO: replace with actual number
+      const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
 const WHATSAPP_MSG = encodeURIComponent(
-  'Hi, mujhe ACP/Glass/Aluminium work ke liye enquiry karni hai. Kripya details bataiye.'
+  siteConfig.whatsappMsg
 )
 const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
   return (

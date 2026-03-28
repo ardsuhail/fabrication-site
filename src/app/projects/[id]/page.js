@@ -54,8 +54,8 @@ export async function generateStaticParams() {
 export default async function ProjectDetailPage({ params }) {
   const { id } = await params;
   const project = getProjectById(id);
-  console.log("Project ID:", id);
-  console.log("Project Data:", project);
+  // console.log("Project ID:", id);
+  // console.log("Project Data:", project);
   if (!project) {
     notFound();
   }

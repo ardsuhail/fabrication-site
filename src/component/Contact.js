@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/config/site"
 import Image from "next/image"
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
-const WHATSAPP_NUMBER = siteConfig.whatsappNumber
+const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
 const PHONE_DISPLAY   = siteConfig.phone
 const EMAIL           = siteConfig.email
 const ADDRESS_LINE1   = siteConfig.location
@@ -290,7 +290,7 @@ I'd like to get a quote for your services.
                   Mon–Sat, 9 AM to 7 PM. Our team will answer your questions on the spot.
                 </p>
                 <Link
-                  href={`tel:+919761396570`}
+                  href={`tel:+91${WHATSAPP_NUMBER}`}
                   className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-300 px-4 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:border-gray-400 transition active:scale-95"
                 >
                   📞 {PHONE_DISPLAY}

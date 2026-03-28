@@ -16,9 +16,9 @@ import {
 import { siteConfig } from "@/lib/config/site"
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
-const WHATSAPP_NUMBER = "919761396570"
+const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
 const WHATSAPP_MSG = encodeURIComponent(
-  "Hi, I would like to enquire about your fabrication services (ACP / Glass / Aluminium). Please share details."
+  siteConfig.whatsappMsg
 )
 const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
 
@@ -153,7 +153,8 @@ const About = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-green-600 active:scale-95"
             >
-              💬 Get Free Quote
+              <Image src="/whiteWhatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />
+               Get Free Quote
             </Link>
             <Link
               href="/portfolio"

@@ -140,13 +140,13 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-15 md:py-8 text-center z-10">
-        <span className="mb-4 inline-block rounded-full border border-green-500/40 bg-green-500/10 px-4 py-1.5 text-xs font-medium text-green-400 tracking-wide">
+        <span className="mb-1 md:mb-4 inline-block rounded-full border border-green-500/40 bg-green-500/10 px-4 py-1.5 text-xs font-medium text-green-400 tracking-wide">
           {siteConfig.location} — {siteConfig.stats.experience} of Expertise
         </span>
         <h1 className="max-w-4xl text-2xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
           {HERO_HEADING}
         </h1>
-        <p className="mt-2 md:mt-4 max-w-2xl text-base text-neutral-300 md:text-lg">
+        <p className="mt-1 md:mt-4 max-w-2xl text-base text-neutral-300 md:text-lg">
           {HERO_SUBHEADING}
         </p>
         <div className="hidden md:flex mt-8  flex-wrap justify-center gap-4">
@@ -433,7 +433,7 @@ const page = () => {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
-                href="tel:+919761396570"
+                href={`tel:+91${siteConfig.phone.replace(/^\+/, '')}`}
                 className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 transition hover:border-gray-500 hover:bg-gray-100"
               >
                 📞 Call Now
