@@ -36,8 +36,8 @@ export const siteConfig = {
   },
 
     social: {
-    facebook: "https://www.facebook.com/metalkohinoor",
-    instagram: "https://www.instagram.com/metalkohinoor",
+    facebook: "https://www.facebook.com/metal_kohinoor_aluminum/",
+    instagram: "https://www.instagram.com/metal_kohinoor_aluminum/",
     twitter: "https://twitter.com/metalkohinoor",
     linkedin: "https://www.linkedin.com/company/metalkohinoor",
     youtube: "https://www.youtube.com/@metalkohinoor",
