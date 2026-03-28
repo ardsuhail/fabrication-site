@@ -1,0 +1,95 @@
+export const siteConfig = {
+  businessName: "Metal Kohinoor",
+  owner: "Sonu",
+  phone: "+919797928168",
+  whatsapp: "919797928168",
+  email: "contact@example.com",
+  location: "Shahid Nagar Metro Station kalyan chownk, Delhi, India",
+    addressLine2: "Noida / Gurgaon, India",
+  whatsappMsg: "Hi, I would like to enquire about your fabrication services (ACP / Glass / Aluminium). Please share details.",
+  description: "Professional Aluminium Fabricator with 10+ years of experience in ACP, Glass & Aluminium work.",
+  working_hours: "Mon-Sat: 9am - 7pm",
+  city: "Delhi NCR",
+  state: "Delhi",
+  areaServed: ["Delhi", "Noida", "Gurgaon"],  
+  foundingYear: "2014",
+  numberOfEmployees: "15",
+  postalCode: "110092",
+// const BRAND_TAGLINE = 'Premium Aluminium, ACP & Glass Work'
+
+// const BRAND_DESC    = '10+ years of experience delivering precision fabrication work across Delhi, Noida, and Gurgaon. Your trusted partner for commercial and residential projects.'
+
+  services: [
+    "ACP Cladding",
+    "Louvers",
+    "Glass Work",
+    "Aluminium Work"
+  ],
+
+  stats: {
+    experience: "10+ Years",
+    projects: "100+",
+    satisfaction: "100%",
+    citiesServed: "3",
+    clients: "500+",
+    Warranty: "1 Year"
+  },
+
+    social: {
+    facebook: "https://www.facebook.com/metalkohinoor",
+    instagram: "https://www.instagram.com/metalkohinoor",
+    twitter: "https://twitter.com/metalkohinoor",
+    linkedin: "https://www.linkedin.com/company/metalkohinoor",
+    youtube: "https://www.youtube.com/@metalkohinoor",
+    whatsappLink: "https://wa.me/919761396570",
+    twitterHandle: "metalkohinoor"
+  },
+}
+export const servicesSchema = [
+    {
+      name: "Aluminium Work",
+      description: "Premium aluminium doors, windows, sliding systems, curtain walls and structural glazing.",
+      serviceType: "Aluminium Fabrication"
+    },
+    {
+      name: "ACP Work",
+      description: "ACP cladding for shop fronts, commercial buildings, and modern facades.",
+      serviceType: "ACP Cladding"
+    },
+    {
+      name: "Glass Work",
+      description: "Toughened glass partitions, shower enclosures, glass doors, and balcony railings.",
+      serviceType: "Glass Installation"
+    },
+    {
+      name: "Partition Work",
+      description: "Glass & aluminium partitions for offices, cabins, and homes.",
+      serviceType: "Partition Installation"
+    },
+    {
+      name: "UPVC Work",
+      description: "Soundproof and energy-efficient UPVC windows and doors.",
+      serviceType: "UPVC Installation"
+    }
+  ];
+// ─── METADATA ────────────────────────────────────────────────────────────────
+  export const testimonialsList = [
+      {
+        author: "Rahul Sharma",
+        reviewBody: "The glass partition for our office was executed perfectly. Great quality and timely delivery.",
+        rating: 5,
+        location: "Meerut"
+      },
+      {
+        author: "Priya Gupta",
+        reviewBody: "Our shop's ACP front looks exactly how we imagined. Clean finish and professional work.",
+        rating: 5,
+        location: "Delhi"
+      },
+      {
+        author: "Mohit Verma",
+        reviewBody: "Installed UPVC windows — the soundproofing is impressive. Smooth experience overall.",
+        rating: 4,
+        location: "Ghaziabad"
+      }
+    ];
